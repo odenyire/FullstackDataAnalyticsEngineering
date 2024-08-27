@@ -1,0 +1,224 @@
+Below are the CREATE TABLE statements for all the tables, based on the DESCRIBE and sample data provided, along with the DESCRIBE statements for reference.
+
+SQL Statements
+1. financials_csv
+DESCRIBE Statement:
+
+sql
+Copy code
+DESCRIBE financials_csv;
+Output:
+
+col_name	data_type	comment
+PlayerID	int	null
+Name	string	null
+Position	string	null
+Nationality	string	null
+Age	int	null
+Appearances	int	null
+Goals	int	null
+Assists	int	null
+Revenue	float	null
+CREATE TABLE Statement:
+
+sql
+Copy code
+CREATE TABLE financials_csv (
+    PlayerID INT,
+    Name STRING,
+    Position STRING,
+    Nationality STRING,
+    Age INT,
+    Appearances INT,
+    Goals INT,
+    Assists INT,
+    Revenue FLOAT
+);
+2. match_manager_link
+DESCRIBE Statement:
+
+sql
+Copy code
+DESCRIBE match_manager_link;
+Output:
+
+col_name	data_type	comment
+MatchID	int	null
+ManagerID	int	null
+CREATE TABLE Statement:
+
+sql
+Copy code
+CREATE TABLE match_manager_link (
+    MatchID INT,
+    ManagerID INT
+);
+3. matches_csv
+DESCRIBE Statement:
+
+sql
+Copy code
+DESCRIBE matches_csv;
+Output:
+
+col_name	data_type	comment
+MatchID	int	null
+Date	date	null
+Opponent	string	null
+Home/Away	string	null
+Result	string	null
+GoalsScored	int	null
+GoalsConceded	int	null
+PlayerID	int	null
+CREATE TABLE Statement:
+
+sql
+Copy code
+CREATE TABLE matches_csv (
+    MatchID INT,
+    Date DATE,
+    Opponent STRING,
+    Home_Away STRING,
+    Result STRING,
+    GoalsScored INT,
+    GoalsConceded INT,
+    PlayerID INT
+);
+4. players_csv
+DESCRIBE Statement:
+
+sql
+Copy code
+DESCRIBE players_csv;
+Output:
+
+col_name	data_type	comment
+PlayerID	int	null
+Name	string	null
+Position	string	null
+Nationality	string	null
+Age	int	null
+Appearances	int	null
+Goals	int	null
+Assists	int	null
+CREATE TABLE Statement:
+
+sql
+Copy code
+CREATE TABLE players_csv (
+    PlayerID INT,
+    Name STRING,
+    Position STRING,
+    Nationality STRING,
+    Age INT,
+    Appearances INT,
+    Goals INT,
+    Assists INT
+);
+5. historical_performance_csv
+DESCRIBE Statement:
+
+sql
+Copy code
+DESCRIBE historical_performance_csv;
+Output:
+
+col_name	data_type	comment
+MatchID	int	null
+Date	date	null
+Opponent	string	null
+Home/Away	string	null
+Result	string	null
+GoalsScored	int	null
+GoalsConceded	int	null
+CREATE TABLE Statement:
+
+sql
+Copy code
+CREATE TABLE historical_performance_csv (
+    MatchID INT,
+    Date DATE,
+    Opponent STRING,
+    Home_Away STRING,
+    Result STRING,
+    GoalsScored INT,
+    GoalsConceded INT
+);
+6. investors_csv
+DESCRIBE Statement:
+
+sql
+Copy code
+DESCRIBE investors_csv;
+Output:
+
+col_name	data_type	comment
+InvestorID	int	null
+Name	string	null
+InvestmentAmount	int	null
+InvestmentDate	date	null
+CREATE TABLE Statement:
+
+sql
+Copy code
+CREATE TABLE investors_csv (
+    InvestorID INT,
+    Name STRING,
+    InvestmentAmount INT,
+    InvestmentDate DATE
+);
+7. managers_csv
+DESCRIBE Statement:
+
+sql
+Copy code
+DESCRIBE managers_csv;
+Output:
+
+col_name	data_type	comment
+ManagerID	int	null
+Name	string	null
+StartDate	date	null
+EndDate	string	null
+CREATE TABLE Statement:
+
+sql
+Copy code
+CREATE TABLE managers_csv (
+    ManagerID INT,
+    Name STRING,
+    StartDate DATE,
+    EndDate STRING
+);
+8. players_csv_1_txt
+DESCRIBE Statement:
+
+sql
+Copy code
+DESCRIBE players_csv_1_txt;
+Output:
+
+col_name	data_type	comment
+PlayerID	int	null
+Name	string	null
+Position	string	null
+Nationality	string	null
+Age	int	null
+Appearances	int	null
+Goals	int	null
+Assists	int	null
+CREATE TABLE Statement:
+
+sql
+Copy code
+CREATE TABLE players_csv_1_txt (
+    PlayerID INT,
+    Name STRING,
+    Position STRING,
+    Nationality STRING,
+    Age INT,
+    Appearances INT,
+    Goals INT,
+    Assists INT
+);
+This set of CREATE TABLE statements should accurately reflect the structure of your tables. If you need any further adjustments or additional information, feel free to ask!
